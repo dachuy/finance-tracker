@@ -26,6 +26,13 @@
                   method: :delete) %></li>
             </ul>
           </div>
+        <% else %>
+          <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-right col-md-4">
+              <li class="col-md-4 logout">
+                <%= link_to "Sign up", new_user_registration_path, class: "btn btn-xs btn-danger"%></li>
+            </ul>
+          </div>
         <% end %>
       </div>
     </div>
